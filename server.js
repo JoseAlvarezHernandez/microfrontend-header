@@ -2,6 +2,6 @@
 var express = require('express');
 var app = express();
 
-app.use('/', express.static('docs'));
+app.get('/*', express.static('docs'));
 
-app.listen(process.env.port || process.env.PORT || 3000);
+app.listen(process.env.port || process.env.PORT || 3000,()=>console.log('App started'));
