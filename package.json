@@ -1,6 +1,6 @@
 {
   "name": "header",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "node server",
@@ -9,7 +9,9 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "private": true,
+  "publishConfig": {
+    "registry": "http://localhost:8081/artifactory/api/npm/local-npm/"
+  },
   "dependencies": {
     "@angular/animations": "~7.1.0",
     "@angular/common": "~7.1.0",
